@@ -1,0 +1,36 @@
+.intro {
+    background-image: url('../images/man-sitting-outside-laptop-arrow.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.intro__container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.intro__content {
+    width: 50%;
+}
+
+.intro__subtitle {
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.intro__title {
+    font-size: 8rem;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 3rem;
+
+}
+
+.intro__desc {
+    font-weight: 300;
+    margin-bottom: 3rem;
+}

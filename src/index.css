@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --main-color: #ef443b;
+  --black-color: #464646;
+  --white-color: #fff;
+  --height-header: 8rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: var(--black-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--main-color);
+  border-radius: 2rem;
+  color: var(--main-color);
+  background-color: var(--white-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+  margin: 0 .5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button--primary {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+.button--large {
+  padding: 1.5rem 3rem;
+}
+
+.button--default:hover {
+  background-color: #FFD5D6;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+/* Reset css */
+@import url('./css/reset.css');
+/* Header css */
+@import url('./css/header.css');
+/* Banner css */
+@import url('./css/banner.css');
+/* Intro css */
+@import url('./css/intro.css');
+/* Trusted css */
+@import url('./css/trusted.css');
