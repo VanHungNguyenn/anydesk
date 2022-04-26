@@ -9,7 +9,8 @@ import Community from './components/Community'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Pricing from './components/Pricing'
-import Test from './components/Test'
+import Question from './components/Question'
+import Tutorial from './components/Tutorial'
 
 function App() {
 	return (
@@ -21,11 +22,12 @@ function App() {
 			<Statistic />
 			<Features />
 			<Utilities />
+			<Tutorial />
 			<Pricing />
 			<Community />
+			<Question />
 			<Contact />
 			<Footer />
-			<Test />
 		</>
 	)
 }

@@ -1,0 +1,29 @@
+.tutorial {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tutorial__video {
+    width: calc(50% - 1rem);
+}
+
+.tutorial__content {
+    width: calc(50% - 1rem);
+    padding-left: 4rem;
+}
+
+.tutorial__content-subtitle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.tutorial__content-title {
+    font-size: 4.8rem;
+    font-weight: 300;
+}

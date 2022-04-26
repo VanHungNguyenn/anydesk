@@ -65,3 +65,7 @@ body {
 @import url('./css/contact.css');
 /* Footer css */
 @import url('./css/footer.css');
+/* Question css */
+@import url('./css/question.css');
+/* Tutorial css */
+@import url('./css/tutorial.css');
