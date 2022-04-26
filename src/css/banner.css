@@ -17,3 +17,8 @@
     font-size: 2.1rem;
     margin-bottom: 2rem;
 }
+
+.banner__buttons {
+    display: flex;
+    align-items: center;
+}

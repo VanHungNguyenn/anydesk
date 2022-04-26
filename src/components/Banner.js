@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const Banner = () => {
 	return (
@@ -24,9 +23,9 @@ const Banner = () => {
 				<div className='button button--default'>
 					Start Business Trial
 				</div>
-				<Link to='pricing'>
+				<div>
 					<div className='button button--default'>Order Now</div>
-				</Link>
+				</div>
 			</div>
 		</div>
 	)

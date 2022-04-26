@@ -1,0 +1,73 @@
+.pricing {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricing__title {
+    font-size: 4.8rem;
+
+    margin-bottom: 2rem;
+}
+
+.pricing__subtitle {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.pricing__list {
+    margin: 10rem 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pricing__item {
+    width: calc(100%/3 - 2rem);
+    padding: 1rem 3rem;
+    border: 1px solid #ccc;
+}
+
+.pricing__item-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.pricing__item-price {
+    font-size: 5.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pricing__item-subprice {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.pricing__item-text {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.pricing__item-includes {
+    margin: 3rem 0;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.pricing__item-features {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.pricing__item-features li {
+    margin-bottom: 1rem;
+}
