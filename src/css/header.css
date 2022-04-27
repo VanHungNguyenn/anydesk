@@ -12,10 +12,11 @@
     display: flex;
     align-items: center;
     height: var(--height-header);
+    flex-wrap: nowrap;
 }
 
 .header__logo {
-    width: 16rem;
+    min-width: 16rem;
     height: auto;
     margin-right: 5rem;
 }
@@ -35,4 +36,9 @@
 
 .header__nav-links {
     padding: 0 2rem;
+    cursor: pointer;
+}
+
+.header__nav-links:hover {
+    color: var(--main-color);
 }

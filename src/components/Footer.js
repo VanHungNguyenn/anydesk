@@ -1,5 +1,6 @@
 import React from 'react'
 import footerLogo from '../images/footerLogo.svg'
+import DropdownLanguage from './utils/DropdownLanguage/DropdownLanguage'
 
 const Footer = () => {
 	return (
@@ -8,6 +9,9 @@ const Footer = () => {
 				<div className='footer__left'>
 					<div className='footer__logo'>
 						<img src={footerLogo} alt='Logo' />
+					</div>
+					<div className='footer__language'>
+						<DropdownLanguage />
 					</div>
 				</div>
 				<div className='footer__right'>

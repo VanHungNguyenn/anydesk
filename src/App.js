@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import Pricing from './components/Pricing'
 import Question from './components/Question'
 import Tutorial from './components/Tutorial'
+import Review from './components/Review'
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 			<Trusted />
 			<Statistic />
 			<Features />
+			<Review />
 			<Utilities />
 			<Tutorial />
 			<Pricing />

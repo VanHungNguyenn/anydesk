@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper'
 import 'swiper/css'
 import { images } from '../constants'
-import '../css/trusted.css'
 
 const imgs = [
 	images.amedes,

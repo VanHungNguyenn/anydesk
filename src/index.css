@@ -69,3 +69,5 @@ body {
 @import url('./css/question.css');
 /* Tutorial css */
 @import url('./css/tutorial.css');
+/* Review css */
+@import url('./css/review.css');
