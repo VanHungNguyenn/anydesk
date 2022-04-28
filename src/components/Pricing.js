@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pricing = () => {
 	return (
-		<div className='pricing container'>
+		<div className='pricing container' id='pricing'>
 			<div className='pricing__title'>The Right Solution for You</div>
 			<div className='pricing__subtitle'>
 				Free 14 day trial for professional use.

@@ -2,19 +2,22 @@ import React, { useState, useRef } from 'react'
 import { languages } from '../../../constants'
 import useOnClickOutside from '../../../hooks/useOnClickOutside'
 import './dropdownLanguage.css'
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
-const DropdownLanguage = () => {
+const DropdownLanguage = ({ currentLang }) => {
 	const [isOpen, setIsOpen] = useState(false)
-	const [language, setLanguage] = useState('en')
+
 	const ref = useRef()
+	const { i18n } = useTranslation()
 
 	const handleClick = () => {
 		setIsOpen(!isOpen)
 	}
 
 	const handleChange = (lang) => {
-		setLanguage(lang)
 		setIsOpen(false)
+		i18n.changeLanguage(lang)
 	}
 
 	useOnClickOutside(ref, () => setIsOpen(false))
@@ -30,15 +33,17 @@ const DropdownLanguage = () => {
 						{/* flags */}
 						<div
 							className={`dropdown-language-current__flag fi fi-${
-								languages.find((lang) => lang.code === language)
-									.country_code
+								languages.find(
+									(lang) => lang.code === currentLang
+								).country_code
 							}`}
 						></div>
 						{/* language */}
 						<div className='dropdown-language-current__name'>
 							{
-								languages.find((lang) => lang.code === language)
-									.name
+								languages.find(
+									(lang) => lang.code === currentLang
+								).name
 							}
 						</div>
 					</div>
@@ -49,21 +54,22 @@ const DropdownLanguage = () => {
 				{isOpen && (
 					<div className='dropdown-language__dropdown'>
 						{languages.map((lang, index) => (
-							<div
-								className='dropdown-language-dropdown__item'
-								key={index}
-								value={lang.code}
-								onClick={() => handleChange(lang.code)}
-							>
-								{/* flags */}
+							<Link to={`/${lang.code}`} key={index}>
 								<div
-									className={`dropdown-language-dropdown__flag fi fi-${lang.country_code}`}
-								></div>
-								{/* language */}
-								<div className='dropdown-language-dropdown__name'>
-									{lang.name}
+									className='dropdown-language-dropdown__item'
+									value={lang.code}
+									onClick={() => handleChange(lang.code)}
+								>
+									{/* flags */}
+									<div
+										className={`dropdown-language-dropdown__flag fi fi-${lang.country_code}`}
+									></div>
+									{/* language */}
+									<div className='dropdown-language-dropdown__name'>
+										{lang.name}
+									</div>
 								</div>
-							</div>
+							</Link>
 						))}
 					</div>
 				)}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Logo from '../images/logo.svg'
 import DropdownLanguage from './utils/DropdownLanguage/DropdownLanguage'
 
-const Header = () => {
+const Header = ({ currentLang }) => {
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
@@ -41,39 +41,47 @@ const Header = () => {
 							<i className='fa-solid fa-xmark'></i>
 						</div>
 						<div className='header__nav'>
-							<div
+							{/* click home, scroll id home */}
+
+							<a
+								href='#home'
 								className='header__nav-links'
 								onClick={handleOffToggleMenu}
 							>
 								Home
-							</div>
-							<div
+							</a>
+							<a
+								href='#solutions'
 								className='header__nav-links'
 								onClick={handleOffToggleMenu}
 							>
 								Solutions
-							</div>
-							<div
+							</a>
+
+							<a
+								href='#tutorial'
 								className='header__nav-links'
 								onClick={handleOffToggleMenu}
 							>
 								Tutorial
-							</div>
-							<div
+							</a>
+							<a
+								href='#pricing'
 								className='header__nav-links'
 								onClick={handleOffToggleMenu}
 							>
 								Pricing
-							</div>
-							<div
+							</a>
+							<a
+								href='#contact'
 								className='header__nav-links'
 								onClick={handleOffToggleMenu}
 							>
 								Contact
-							</div>
+							</a>
 						</div>
 						<div className='header__language'>
-							<DropdownLanguage />
+							<DropdownLanguage currentLang={currentLang} />
 						</div>
 						{/* <div className='header__buttons'>
 						<div className='button button--primary'>

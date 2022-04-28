@@ -1,8 +1,11 @@
 import React from 'react'
+// import { useTranslation } from 'react-i18next'
 
 const Banner = () => {
+	// const { t, i18n } = useTranslation()
+
 	return (
-		<div className='banner container'>
+		<div className='banner container' id='home'>
 			<h1 className='banner__title'>
 				Access. <span>Now.</span>
 			</h1>

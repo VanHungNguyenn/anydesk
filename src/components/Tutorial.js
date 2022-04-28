@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tutorial = () => {
 	return (
-		<div className='tutorial container'>
+		<div className='tutorial container' id='tutorial'>
 			<div className='tutorial__video'>
 				<iframe
 					width='100%'

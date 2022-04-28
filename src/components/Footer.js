@@ -1,6 +1,6 @@
 import React from 'react'
 import footerLogo from '../images/footerLogo.svg'
-import DropdownLanguage from './utils/DropdownLanguage/DropdownLanguage'
+// import DropdownLanguage from './utils/DropdownLanguage/DropdownLanguage'
 
 const Footer = () => {
 	return (
@@ -10,9 +10,9 @@ const Footer = () => {
 					<div className='footer__logo'>
 						<img src={footerLogo} alt='Logo' />
 					</div>
-					<div className='footer__language'>
+					{/* <div className='footer__language'>
 						<DropdownLanguage />
-					</div>
+					</div> */}
 				</div>
 				<div className='footer__right'>
 					<div className='footer__menu-item'>
@@ -20,19 +20,33 @@ const Footer = () => {
 							Why AnyDesk
 						</div> */}
 						<div className='footer__menu-item__list'>
-							<div className='footer__menu-item__link'>Home</div>
-							<div className='footer__menu-item__link'>
+							<a href='#home' className='footer__menu-item__link'>
+								Home
+							</a>
+							<a
+								href='#solutions'
+								className='footer__menu-item__link'
+							>
 								Solutions
-							</div>
-							<div className='footer__menu-item__link'>
+							</a>
+							<a
+								href='#tutorial'
+								className='footer__menu-item__link'
+							>
 								Tutorial
-							</div>
-							<div className='footer__menu-item__link'>
+							</a>
+							<a
+								href='#pricing'
+								className='footer__menu-item__link'
+							>
 								Pricing
-							</div>
-							<div className='footer__menu-item__link'>
+							</a>
+							<a
+								href='#contact'
+								className='footer__menu-item__link'
+							>
 								Contact
-							</div>
+							</a>
 						</div>
 					</div>
 					{/* <div className='footer__menu-item'>

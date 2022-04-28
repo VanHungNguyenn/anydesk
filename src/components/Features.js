@@ -3,7 +3,7 @@ import { images } from '../constants'
 
 const Features = () => {
 	return (
-		<div className='features container'>
+		<div className='features container' id='solutions'>
 			<div className='features__content'>
 				<div className='features__item'>
 					<img

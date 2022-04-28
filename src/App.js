@@ -1,36 +1,48 @@
-import Header from './components/Header'
-import Banner from './components/Banner'
-import Intro from './components/Intro'
-import Statistic from './components/Statistic'
-import Trusted from './components/Trusted'
-import Features from './components/Features'
-import Utilities from './components/Utilities'
-import Community from './components/Community'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Pricing from './components/Pricing'
-import Question from './components/Question'
-import Tutorial from './components/Tutorial'
-import Review from './components/Review'
+import { useRef, useState, useEffect } from 'react'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Home from './pages/Home'
+import { languages } from './constants'
+import Cookies from 'js-cookie'
+import axios from 'axios'
 
 function App() {
+	const currentLang = useRef(
+		window.location.pathname.split('/')[1] || Cookies.get('i18next') || 'en'
+	)
+
+	const [lang, setLang] = useState('')
+
+	console.log(lang)
+
+	const getData = async () => {
+		const res = await axios.get('https://geolocation-db.com/json/')
+		console.log(res.data)
+		setLang(
+			languages.find(
+				(lang) =>
+					lang.country_code === res.data.country_code.toLowerCase()
+			)?.code || 'en'
+		)
+	}
+
+	useEffect(() => {
+		getData()
+	}, [])
+
 	return (
-		<>
-			<Header />
-			<Banner />
-			<Intro />
-			<Trusted />
-			<Statistic />
-			<Features />
-			<Review />
-			<Utilities />
-			<Tutorial />
-			<Pricing />
-			<Community />
-			<Question />
-			<Contact />
-			<Footer />
-		</>
+		<Routes>
+			<Route
+				path='/'
+				element={<Navigate to={`/${currentLang.current}`} />}
+			/>
+			{languages.map((lang, index) => (
+				<Route
+					path={`/${lang.code}`}
+					element={<Home currentLang={lang.code} />}
+					key={index}
+				/>
+			))}
+		</Routes>
 	)
 }
 
