@@ -8,6 +8,7 @@ const Banner = () => {
 		<div className='banner container' id='home'>
 			<h1 className='banner__title'>
 				Access. <span>Now.</span>
+				{/* {t('title')} */}
 			</h1>
 			<h4 className='banner__subtitle'>
 				Access any device at any time. From anywhere. Always secure and
