@@ -17,7 +17,7 @@ const Features = () => {
 						our own DeskRT codec, <br />
 						Frame rates of 60 fps.
 					</div>
-					<div className='features__item-link'>Learn More</div>
+					{/* <div className='features__item-link'>Learn More</div> */}
 				</div>
 				<div className='features__item'>
 					<img
@@ -31,7 +31,7 @@ const Features = () => {
 						Start App. <br />
 						Done.
 					</div>
-					<div className='features__item-link'>Download Now</div>
+					{/* <div className='features__item-link'>Download Now</div> */}
 				</div>
 				<div className='features__item'>
 					<img
@@ -45,7 +45,7 @@ const Features = () => {
 						256-bit AES <br />
 						Transport Encryption
 					</div>
-					<div className='features__item-link'>Learn More</div>
+					{/* <div className='features__item-link'>Learn More</div> */}
 				</div>
 				<div className='features__item'>
 					<img
@@ -59,9 +59,9 @@ const Features = () => {
 						macOS, iOS, Android, <br />
 						Linux, Raspberry Pi
 					</div>
-					<div className='features__item-link'>
+					{/* <div className='features__item-link'>
 						Find Your Platform
-					</div>
+					</div> */}
 				</div>
 			</div>
 			<div className='features__intro'>

@@ -1,5 +1,6 @@
 .banner {
-    padding: 15rem 0 13rem;
+    padding-top: 15rem;
+    padding-bottom: 13rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -7,6 +8,7 @@
 
 .banner__title {
     font-size: 14.4rem;
+    text-align: center;
 }
 
 .banner__title span {
@@ -16,9 +18,17 @@
 .banner__subtitle {
     font-size: 2.1rem;
     margin-bottom: 2rem;
+    text-align: center;
+
 }
 
 .banner__buttons {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .banner__title {
+        font-size: 7rem;
+    }
 }

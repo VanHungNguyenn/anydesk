@@ -23,11 +23,22 @@ const Trusted = () => {
 			</div>
 			<Swiper
 				spaceBetween={50}
-				slidesPerView={5}
+				slidesPerView={2}
 				loop={true}
 				modules={[Autoplay]}
 				autoplay={{
 					delay: 3000,
+				}}
+				breakpoints={{
+					768: {
+						slidesPerView: 5,
+					},
+					480: {
+						slidesPerView: 3,
+					},
+					0: {
+						slidesPerView: 2,
+					},
 				}}
 			>
 				{imgs.map((img, index) => (

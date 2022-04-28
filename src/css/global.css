@@ -41,7 +41,7 @@ a, a:hover {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     font-weight: 600;
-    margin: 0 .5rem;
+    margin: 1rem .5rem;
     opacity: 0.9;
     line-height: 1.6;
 }

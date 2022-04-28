@@ -16,31 +16,26 @@ const Footer = () => {
 				</div>
 				<div className='footer__right'>
 					<div className='footer__menu-item'>
-						<div className='footer__menu-item__title'>
+						{/* <div className='footer__menu-item__title'>
 							Why AnyDesk
-						</div>
+						</div> */}
 						<div className='footer__menu-item__list'>
+							<div className='footer__menu-item__link'>Home</div>
 							<div className='footer__menu-item__link'>
-								Performance
+								Solutions
 							</div>
 							<div className='footer__menu-item__link'>
-								Security
+								Tutorial
 							</div>
 							<div className='footer__menu-item__link'>
-								All Platforms
+								Pricing
 							</div>
 							<div className='footer__menu-item__link'>
-								Customization
-							</div>
-							<div className='footer__menu-item__link'>
-								Case Studies
-							</div>
-							<div className='footer__menu-item__link'>
-								Features
+								Contact
 							</div>
 						</div>
 					</div>
-					<div className='footer__menu-item'>
+					{/* <div className='footer__menu-item'>
 						<div className='footer__menu-item__title'>
 							Solutions
 						</div>
@@ -99,7 +94,7 @@ const Footer = () => {
 							</div>
 							<div className='footer__menu-item__link'>Blog</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			<div className='container sign'>
@@ -108,24 +103,16 @@ const Footer = () => {
 				</div>
 				<div className='sign__social'>
 					<div className='sign__social-link'>
-						<i className='fa-brands fa-instagram'></i>
-					</div>
-					<div className='sign__social-link'>
 						<i className='fa-brands fa-facebook-f'></i>
 					</div>
 					<div className='sign__social-link'>
-						<i className='fa-brands fa-linkedin'></i>
+						<i className='fa-brands fa-twitter'></i>
+					</div>
+					<div className='sign__social-link'>
+						<i className='fa-brands fa-telegram'></i>
 					</div>
 					<div className='sign__social-link'>
 						<i className='fa-brands fa-youtube'></i>
-					</div>
-
-					<div className='sign__social-link'>
-						<i className='fa-brands fa-reddit'></i>
-					</div>
-
-					<div className='sign__social-link'>
-						<i className='fa-brands fa-twitter'></i>
 					</div>
 				</div>
 			</div>

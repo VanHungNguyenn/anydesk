@@ -16,6 +16,7 @@
 .contact__form {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .contact__input {
@@ -24,4 +25,14 @@
     outline: none;
     border: none;
     width: 40%;
+}
+
+@media screen and (max-width: 480px) {
+    .contact__title {
+        text-align: center;
+    }
+
+    .contact__input {
+        width: 100%;
+    }
 }

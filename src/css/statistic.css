@@ -38,3 +38,26 @@
     font-size: 4rem;
     color: var(--main-color);
 }
+
+@media screen and (max-width: 1024px) {
+    .statistic {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .statistic__list {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistic__item {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}

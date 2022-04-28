@@ -34,3 +34,24 @@
     font-weight: 300;
     margin-bottom: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+    .intro__content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .intro__title, .intro__subtitle, .intro__desc {
+        text-align: center;
+    }
+
+    .intro__title {
+        font-size: 5.5rem;
+    }
+
+    .intro {
+        background: var(--white-color);
+    }
+}

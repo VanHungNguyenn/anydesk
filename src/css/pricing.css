@@ -8,13 +8,14 @@
 
 .pricing__title {
     font-size: 4.8rem;
-
+    text-align: center;
     margin-bottom: 2rem;
 }
 
 .pricing__subtitle {
     font-size: 2.4rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .pricing__list {
@@ -23,12 +24,18 @@
     align-items: stretch;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .pricing__item {
     width: calc(100%/3 - 2rem);
     padding: 1rem 3rem;
     border: 1px solid #ccc;
+}
+
+.pricing__item:nth-child(2) {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 1px var(--main-color);
 }
 
 .pricing__item-name {
@@ -70,4 +77,26 @@
 
 .pricing__item-features li {
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .pricing__item {
+        width: calc(50% - 2rem);
+        margin-bottom: 2rem;
+    }
+
+    /* pricing__item 3 100% width */
+    .pricing__item:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .pricing__list {
+        flex-direction: column;
+    }
+
+    .pricing__item {
+        width: 100%;
+    }
 }

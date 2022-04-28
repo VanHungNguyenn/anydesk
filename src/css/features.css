@@ -57,3 +57,38 @@
     margin-bottom: 7rem;
     text-align: center;
 }
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .features__content, .features__intro {
+        width: 100%;
+    }
+
+    .features__intro {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .features__item {
+        width: 100%;
+    }
+
+    .features__item-image {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .features__item-title {
+        font-size: 2.2rem;
+    }
+
+    .features__item-text {
+        font-size: 1.8rem;
+    }
+}

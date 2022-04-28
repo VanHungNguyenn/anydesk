@@ -20,7 +20,7 @@ const Utilities = () => {
 						infrastructure and service or install on your own
 						servers and work completely independently.
 					</div>
-					<div className='utilities__item-link'>Learn More</div>
+					{/* <div className='utilities__item-link'>Learn More</div> */}
 				</div>
 				<div className='utilities__item'>
 					<img
@@ -36,7 +36,7 @@ const Utilities = () => {
 						devices via smartphone or tablet. Cross-compatible and
 						platform independent.
 					</div>
-					<div className='utilities__item-link'>Learn More</div>
+					{/* <div className='utilities__item-link'>Learn More</div> */}
 				</div>
 				<div className='utilities__item'>
 					<img
@@ -52,7 +52,7 @@ const Utilities = () => {
 						individual needs. Allow a consistent brand experience
 						for your users.
 					</div>
-					<div className='utilities__item-link'>Learn More</div>
+					{/* <div className='utilities__item-link'>Learn More</div> */}
 				</div>
 			</div>
 		</div>
