@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Logo from '../images/logo.svg'
 import DropdownLanguage from './utils/DropdownLanguage/DropdownLanguage'
+import { HashLink } from 'react-router-hash-link'
 
 const Header = ({ currentLang }) => {
 	const [toggleMenu, setToggleMenu] = useState(false)
@@ -43,7 +44,7 @@ const Header = ({ currentLang }) => {
 						<div className='header__nav'>
 							{/* click home, scroll id home */}
 
-							<a
+							{/* <a
 								href='#home'
 								className='header__nav-links'
 								onClick={handleOffToggleMenu}
@@ -78,7 +79,42 @@ const Header = ({ currentLang }) => {
 								onClick={handleOffToggleMenu}
 							>
 								Contact
-							</a>
+							</a> */}
+							<HashLink
+								to='#home'
+								className='header__nav-links'
+								onClick={handleOffToggleMenu}
+							>
+								Home
+							</HashLink>
+							<HashLink
+								to='#solutions'
+								className='header__nav-links'
+								onClick={handleOffToggleMenu}
+							>
+								Solutions
+							</HashLink>
+							<HashLink
+								to='#tutorial'
+								className='header__nav-links'
+								onClick={handleOffToggleMenu}
+							>
+								Tutorial
+							</HashLink>
+							<HashLink
+								to='#pricing'
+								className='header__nav-links'
+								onClick={handleOffToggleMenu}
+							>
+								Pricing
+							</HashLink>
+							<HashLink
+								to='#contact'
+								className='header__nav-links'
+								onClick={handleOffToggleMenu}
+							>
+								Contact
+							</HashLink>
 						</div>
 						<div className='header__language'>
 							<DropdownLanguage currentLang={currentLang} />
