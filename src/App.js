@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import { languages } from './constants'
 import Cookies from 'js-cookie'
 import axios from 'axios'
+import PageNotFound from './components/utils/PageNotFound/PageNotFound'
 
 function App() {
 	const [currentLang, setCurrentLang] = useState(
@@ -42,6 +43,8 @@ function App() {
 							key={index}
 						/>
 					))}
+					{/* Page not found */}
+					<Route path='*' element={<PageNotFound />} />
 				</>
 			)}
 		</Routes>
