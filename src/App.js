@@ -4,18 +4,14 @@ import Home from './pages/Home'
 import { languages } from './constants'
 import Cookies from 'js-cookie'
 import axios from 'axios'
-import PageNotFound from './components/utils/PageNotFound/PageNotFound'
 
 function App() {
 	const [currentLang, setCurrentLang] = useState(
 		window.location.pathname.split('/')[1] || Cookies.get('i18next')
 	)
 
-	console.log('A', currentLang)
-
 	const getData = async () => {
 		const res = await axios.get('https://geolocation-db.com/json/')
-		console.log(res.data)
 		setCurrentLang(
 			languages.find(
 				(lang) =>
@@ -23,6 +19,12 @@ function App() {
 			)?.code || 'en'
 		)
 	}
+
+	// useEffect(() => {
+	// 	document.title = t('title')
+	// 	// change lang htmlTag
+	// 	document.querySelector('html').setAttribute('lang', currentLang)
+	// }, [currentLang, t])
 
 	useEffect(() => {
 		getData()
@@ -44,7 +46,6 @@ function App() {
 						/>
 					))}
 					{/* Page not found */}
-					<Route path='*' element={<PageNotFound />} />
 				</>
 			)}
 		</Routes>

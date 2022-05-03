@@ -13,7 +13,7 @@ const accordionData = [
 	},
 	{
 		question: 'What is a user?',
-		answer: 'If you want to start remote access, you need a valid license assigned to the respective account , e.g. via your own AnyDesk address or alias. By user, the initiator of a session is meant.',
+		answer: 'If you want to start remote access, you need a valid license assigned to the respective account , e.g. via your own MutilViewer address or alias. By user, the initiator of a session is meant.',
 	},
 	{
 		question: 'What are registered devices?',
@@ -21,7 +21,7 @@ const accordionData = [
 	},
 	{
 		question: 'What is a Namespace?',
-		answer: 'You can rename your AnyDesk address (e.g. 123 456 789) to an available alias in the @AD domain (example. My.Name@AD). The Namespace option allows you to specify an individual Namespace available only to you, e.g. My.Name@CompanyName.',
+		answer: 'You can rename your MutilViewer address (e.g. 123 456 789) to an available alias in the @AD domain (example. My.Name@AD). The Namespace option allows you to specify an individual Namespace available only to you, e.g. My.Name@CompanyName.',
 	},
 	{
 		question: 'How can I get support?',

@@ -1,10 +1,12 @@
+// Not used
+
 import React from 'react'
 import { images } from '../constants'
 
 const Utilities = () => {
 	return (
 		<div className='utilities container'>
-			<div className='utilities__title'>AnyDesk fits your Needs</div>
+			<div className='utilities__title'>MutilViewer fits your Needs</div>
 			<div className='utilities__list'>
 				<div className='utilities__item'>
 					<img
@@ -22,22 +24,7 @@ const Utilities = () => {
 					</div>
 					{/* <div className='utilities__item-link'>Learn More</div> */}
 				</div>
-				<div className='utilities__item'>
-					<img
-						src={images.util2}
-						alt='util'
-						className='utilities__item-image'
-					/>
-					<div className='utilities__item-title'>
-						Full mobile support
-					</div>
-					<div className='utilities__item-text'>
-						Access and control desktops, servers, machines, and
-						devices via smartphone or tablet. Cross-compatible and
-						platform independent.
-					</div>
-					{/* <div className='utilities__item-link'>Learn More</div> */}
-				</div>
+
 				<div className='utilities__item'>
 					<img
 						src={images.util3}
@@ -48,9 +35,9 @@ const Utilities = () => {
 						Flexibility & Customization
 					</div>
 					<div className='utilities__item-text'>
-						Create your own version of AnyDesk and fit it to your
-						individual needs. Allow a consistent brand experience
-						for your users.
+						Create your own version of MutilViewer and fit it to
+						your individual needs. Allow a consistent brand
+						experience for your users.
 					</div>
 					{/* <div className='utilities__item-link'>Learn More</div> */}
 				</div>

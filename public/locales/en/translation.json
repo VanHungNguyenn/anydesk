@@ -1,3 +1,17 @@
 {
-	"title": "Hello"
+	"title": "The Fast Remote Desktop Application",
+	"header__nav-links": {
+		"home": "Home",
+		"solutions": "Solutions",
+		"tutorial": "Tutorial",
+		"pricing": "Pricing",
+		"contact": "Contact"
+	},
+
+	"banner__title": {
+		"access": "Access",
+		"now": "Now"
+	},
+	"banner__subtitle": "Access any device at any time. From anywhere. Always secure andfast.",
+	"banner__button": "Download Now"
 }

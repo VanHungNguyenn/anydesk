@@ -17,14 +17,6 @@ const Intro = () => {
 						accomplish great things – from wherever in the world you
 						are.
 					</p>
-					<div className='intro__buttons'>
-						<div className='button button--large button--primary'>
-							Learn More
-						</div>
-						<div className='button button--large button-default'>
-							Discover Features
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

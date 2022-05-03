@@ -8,7 +8,7 @@ const Statistic = () => {
 					<div className='statistic__item'>
 						<div className='statistic__item-content'>
 							<div className='statistic__item-content-value'>
-								500+
+								10+
 							</div>
 							<div className='statistic__item-content-unit'>
 								Million
@@ -19,7 +19,7 @@ const Statistic = () => {
 					<div className='statistic__item'>
 						<div className='statistic__item-content'>
 							<div className='statistic__item-content-value'>
-								900+
+								30+
 							</div>
 							<div className='statistic__item-content-unit'>
 								Million
@@ -32,7 +32,7 @@ const Statistic = () => {
 					<div className='statistic__item'>
 						<div className='statistic__item-content'>
 							<div className='statistic__item-content-value'>
-								50
+								5
 							</div>
 							<div className='statistic__item-content-unit'>
 								Million

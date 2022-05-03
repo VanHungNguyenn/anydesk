@@ -39,6 +39,11 @@ const languages = [
 		name: 'Vietnam',
 		country_code: 'vn',
 	},
+	{
+		code: 'th',
+		name: 'ไทย',
+		country_code: 'th',
+	},
 ]
 
 export default languages

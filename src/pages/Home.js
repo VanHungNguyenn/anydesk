@@ -4,7 +4,6 @@ import Intro from '../components/Intro'
 import Statistic from '../components/Statistic'
 import Trusted from '../components/Trusted'
 import Features from '../components/Features'
-import Utilities from '../components/Utilities'
 import Community from '../components/Community'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
@@ -23,7 +22,6 @@ const Home = ({ currentLang }) => {
 			<Statistic />
 			<Features />
 			<Review />
-			<Utilities />
 			<Tutorial />
 			<Pricing />
 			<Community />

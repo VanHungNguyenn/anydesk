@@ -5,14 +5,14 @@ import 'swiper/css'
 import { images } from '../constants'
 
 const imgs = [
-	images.amedes,
-	images.areandina,
-	images.medizinischeslabor,
-	images.schleich,
-	images.spidercam,
-	images.sunchemical,
-	images.thales,
-	images.wanzl,
+	images.amazon,
+	images.castrol,
+	images.cocacola,
+	images.dell,
+	images.mastercard,
+	images.netflix,
+	images.lg,
+	images.tiktok,
 ]
 
 const Trusted = () => {

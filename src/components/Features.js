@@ -56,8 +56,8 @@ const Features = () => {
 					<div className='features__item-title'>Everywhere</div>
 					<div className='features__item-text'>
 						Works on Windows, <br />
-						macOS, iOS, Android, <br />
-						Linux, Raspberry Pi
+						anywhere and <br />
+						anytime
 					</div>
 					{/* <div className='features__item-link'>
 						Find Your Platform
@@ -66,9 +66,9 @@ const Features = () => {
 			</div>
 			<div className='features__intro'>
 				<div className='features__intro-title'>
-					Why 500+ <br />
+					Why 10+ <br />
 					Million Users <br />
-					love AnyDesk
+					love MutilViewer
 				</div>
 				<div className='button button--primary button--large'>
 					Discover Case Studies

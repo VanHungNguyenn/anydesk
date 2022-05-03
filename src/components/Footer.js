@@ -17,7 +17,7 @@ const Footer = () => {
 				<div className='footer__right'>
 					<div className='footer__menu-item'>
 						{/* <div className='footer__menu-item__title'>
-							Why AnyDesk
+							Why MutilViewer
 						</div> */}
 						<div className='footer__menu-item__list'>
 							<a href='#home' className='footer__menu-item__link'>
@@ -78,7 +78,7 @@ const Footer = () => {
 						<div className='footer__menu-item__title'>Service</div>
 						<div className='footer__menu-item__list'>
 							<div className='footer__menu-item__link'>
-								AnyDesk Services
+								MutilViewer Services
 							</div>
 							<div className='footer__menu-item__link'>
 								Customer Success
@@ -113,7 +113,7 @@ const Footer = () => {
 			</div>
 			<div className='container sign'>
 				<div className='sign__copyrights'>
-					© 2022 AnyDesk Software GmbH
+					© 2022 MutilViewer Software GmbH
 				</div>
 				<div className='sign__social'>
 					<div className='sign__social-link'>

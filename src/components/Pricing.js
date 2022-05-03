@@ -13,7 +13,7 @@ const Pricing = () => {
 			<div className='pricing__list'>
 				<div className='pricing__item'>
 					<div className='pricing__item-name'>Essentials</div>
-					<div className='pricing__item-price'>$9.90</div>
+					<div className='pricing__item-price'>$0</div>
 					<div className='pricing__item-subprice'>
 						per month (billed annually)
 					</div>
@@ -31,7 +31,6 @@ const Pricing = () => {
 						<li>Unlimited devices to connect to (attended)</li>
 						<li>1 managed device (unattended)</li>
 						<li>1 licensed user = 1 device to connect from</li>
-						<li>Mobile Device Support</li>
 						<li>Access to Help Center</li>
 					</ul>
 				</div>
@@ -56,7 +55,6 @@ const Pricing = () => {
 						<li>Unlimited devices to connect to (attended)</li>
 						<li>Up to 3000 managed devices (unattended)</li>
 						<li>Connect from up to 3 devices per licensed user</li>
-						<li>Mobile Device Support</li>
 						<li>Wake-on-Lan</li>
 						<li>Session Recording</li>
 						<li>Advanced security options</li>
@@ -83,7 +81,6 @@ const Pricing = () => {
 						<li>Unlimited devices to connect to (attended)</li>
 						<li>Unlimited managed devices (unattended)</li>
 						<li>Connect from up to 3 devices per licensed user</li>
-						<li>Mobile Device Support</li>
 						<li>Unlimited concurrent sessions</li>
 						<li>Customization and branding</li>
 						<li>Command line interface</li>

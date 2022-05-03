@@ -18,7 +18,7 @@ i18n.use(Backend)
 			loadPath: '/locales/{{lng}}/{{ns}}.json',
 		},
 		detection: {
-			order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
+			order: ['cookie', 'path', 'htmlTag', 'localStorage', 'subdomain'],
 			caches: ['cookie', 'localStorage'],
 			lookupFromPathIndex: 0,
 			checkWhitelist: true,

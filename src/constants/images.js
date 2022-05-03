@@ -6,6 +6,14 @@ import spidercam from '../images/brand/spidercam.png'
 import sunchemical from '../images/brand/sunchemical.png'
 import thales from '../images/brand/thales.png'
 import wanzl from '../images/brand/wanzl.png'
+import amazon from '../images/brand/amazon.png'
+import castrol from '../images/brand/castrol.png'
+import cocacola from '../images/brand/cocacola.png'
+import dell from '../images/brand/dell.png'
+import mastercard from '../images/brand/mastercard.png'
+import netflix from '../images/brand/netflix.png'
+import lg from '../images/brand/lg.png'
+import tiktok from '../images/brand/tiktok.png'
 
 import feature1 from '../images/features/feature1.svg'
 import feature2 from '../images/features/feature2.svg'
@@ -33,6 +41,14 @@ export default {
 	sunchemical,
 	thales,
 	wanzl,
+	amazon,
+	castrol,
+	cocacola,
+	dell,
+	mastercard,
+	netflix,
+	lg,
+	tiktok,
 	feature1,
 	feature2,
 	feature3,

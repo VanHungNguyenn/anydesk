@@ -65,7 +65,7 @@ a, a:hover {
 }
 
 .button--default:hover {
-    background-color: #FFD5D6;
+    background-color: rgb(219, 236, 227);
 }
 
 .text-main {

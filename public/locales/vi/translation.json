@@ -1,3 +1,10 @@
 {
-	"title": "Xin chào"
+	"title": "The Fast Remote Desktop Application",
+	"header__nav-links": {
+		"home": "Trang chủ",
+		"solutions": "Giải pháp",
+		"tutorial": "Hướng dẫn",
+		"pricing": "Bảng giá",
+		"contact": "Liên hệ"
+	}
 }

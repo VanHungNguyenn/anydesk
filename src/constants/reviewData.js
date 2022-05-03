@@ -4,7 +4,7 @@ const reviewData = [
 		author: 'VanHung Ng., Full Stack Developer',
 	},
 	{
-		quote: '“AnyDesk is an essential tool for us because it provides high transmission quality due to its real-time codec.”',
+		quote: '“MutilViewer is an essential tool for us because it provides high transmission quality due to its real-time codec.”',
 		author: 'CongDac H., C# Developer',
 	},
 	{
