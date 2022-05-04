@@ -9,7 +9,7 @@ import quoteWrite from '../images/quote-white.svg'
 
 const Review = () => {
 	return (
-		<div className='review'>
+		<div className='review' id='reviews'>
 			<div className='overlay' />
 			<div className='container-sm'>
 				<Swiper

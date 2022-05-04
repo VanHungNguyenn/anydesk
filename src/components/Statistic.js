@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Statistic = () => {
+	const { t } = useTranslation()
+
 	return (
 		<div className='statistic'>
 			<div className='container statistic__container'>
@@ -11,10 +14,12 @@ const Statistic = () => {
 								10+
 							</div>
 							<div className='statistic__item-content-unit'>
-								Million
+								{t('statistic__item-content-unit.1')}
 							</div>
 						</div>
-						<div className='statistic__item-title'>Downloads</div>
+						<div className='statistic__item-title'>
+							{t('statistic__item-title.1')}
+						</div>
 					</div>
 					<div className='statistic__item'>
 						<div className='statistic__item-content'>
@@ -22,11 +27,11 @@ const Statistic = () => {
 								30+
 							</div>
 							<div className='statistic__item-content-unit'>
-								Million
+								{t('statistic__item-content-unit.2')}
 							</div>
 						</div>
 						<div className='statistic__item-title'>
-							Sessions per month
+							{t('statistic__item-title.2')}
 						</div>
 					</div>
 					<div className='statistic__item'>
@@ -35,11 +40,11 @@ const Statistic = () => {
 								5
 							</div>
 							<div className='statistic__item-content-unit'>
-								Million
+								{t('statistic__item-content-unit.2')}
 							</div>
 						</div>
 						<div className='statistic__item-title'>
-							Bridged miles per month
+							{t('statistic__item-title.3')}
 						</div>
 					</div>
 				</div>

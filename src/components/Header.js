@@ -59,11 +59,11 @@ const Header = ({ currentLang }) => {
 								{t('header__nav-links.solutions')}
 							</HashLink>
 							<HashLink
-								to='#tutorial'
+								to='#reviews'
 								className='header__nav-links'
 								onClick={handleOffToggleMenu}
 							>
-								{t('header__nav-links.tutorial')}
+								{t('header__nav-links.reviews')}
 							</HashLink>
 							<HashLink
 								to='#pricing'

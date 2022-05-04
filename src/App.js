@@ -4,8 +4,11 @@ import Home from './pages/Home'
 import { languages } from './constants'
 import Cookies from 'js-cookie'
 import axios from 'axios'
+import { useTranslation } from 'react-i18next'
 
 function App() {
+	const { t } = useTranslation()
+
 	const [currentLang, setCurrentLang] = useState(
 		window.location.pathname.split('/')[1] || Cookies.get('i18next')
 	)
@@ -20,11 +23,9 @@ function App() {
 		)
 	}
 
-	// useEffect(() => {
-	// 	document.title = t('title')
-	// 	// change lang htmlTag
-	// 	document.querySelector('html').setAttribute('lang', currentLang)
-	// }, [currentLang, t])
+	useEffect(() => {
+		document.title = t('title')
+	}, [currentLang, t])
 
 	useEffect(() => {
 		getData()

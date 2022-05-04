@@ -1,6 +1,6 @@
 import React from 'react'
-import { accordionData } from '../constants'
 import Accordion from './utils/Accordion/Accordion'
+import { accordionData } from '../constants'
 
 const Question = () => {
 	return (

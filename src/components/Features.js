@@ -1,77 +1,41 @@
 import React from 'react'
 import { images } from '../constants'
+import { useTranslation } from 'react-i18next'
 
 const Features = () => {
+	const { t } = useTranslation()
+
 	return (
 		<div className='features container' id='solutions'>
 			<div className='features__content'>
-				<div className='features__item'>
-					<img
-						className='features__item-image'
-						src={images.feature1}
-						alt='img'
-					/>
-					<div className='features__item-title'>Blazing fast</div>
-					<div className='features__item-text'>
-						Minimum latency via <br />
-						our own DeskRT codec, <br />
-						Frame rates of 60 fps.
+				{/* map 4 items [1,2,3,4] */}
+				{[1, 2, 3, 4].map((item) => (
+					<div className='features__item' key={item}>
+						<img
+							className='features__item-image'
+							src={images[`feature${item}`]}
+							alt='img'
+						/>
+
+						<div className='features__item-title'>
+							{t(`features__item-title.${[item]}`)}
+						</div>
+						<div className='features__item-text'>
+							{t(`features__item-text.${[item]}.1`)} <br />
+							{t(`features__item-text.${[item]}.2`)} <br />
+							{t(`features__item-text.${[item]}.3`)}
+						</div>
 					</div>
-					{/* <div className='features__item-link'>Learn More</div> */}
-				</div>
-				<div className='features__item'>
-					<img
-						className='features__item-image'
-						src={images.feature2}
-						alt='img'
-					/>
-					<div className='features__item-title'>Lightweight</div>
-					<div className='features__item-text'>
-						Download 3 MB. <br />
-						Start App. <br />
-						Done.
-					</div>
-					{/* <div className='features__item-link'>Download Now</div> */}
-				</div>
-				<div className='features__item'>
-					<img
-						className='features__item-image'
-						src={images.feature3}
-						alt='img'
-					/>
-					<div className='features__item-title'>Secure</div>
-					<div className='features__item-text'>
-						Military-grade TLS 1.2 security, <br />
-						256-bit AES <br />
-						Transport Encryption
-					</div>
-					{/* <div className='features__item-link'>Learn More</div> */}
-				</div>
-				<div className='features__item'>
-					<img
-						className='features__item-image'
-						src={images.feature4}
-						alt='img'
-					/>
-					<div className='features__item-title'>Everywhere</div>
-					<div className='features__item-text'>
-						Works on Windows, <br />
-						anywhere and <br />
-						anytime
-					</div>
-					{/* <div className='features__item-link'>
-						Find Your Platform
-					</div> */}
-				</div>
+				))}
 			</div>
 			<div className='features__intro'>
 				<div className='features__intro-title'>
-					Why 10+ <br />
-					Million Users <br />
-					love MutilViewer
+					{t('features__intro-title.1')} <br />
+					{t('features__intro-title.2')} <br />
+					{t('features__intro-title.3')}
 				</div>
-				<div className='button button--primary button--large'>
-					Discover Case Studies
+				<div className='features__intro-button button button--primary button--large'>
+					{t('features__intro-button')}
 				</div>
 			</div>
 		</div>

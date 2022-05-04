@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper'
 import 'swiper/css'
 import { images } from '../constants'
+import { useTranslation } from 'react-i18next'
 
 const imgs = [
 	images.amazon,
@@ -16,11 +17,11 @@ const imgs = [
 ]
 
 const Trusted = () => {
+	const { t } = useTranslation()
+
 	return (
 		<div className='container trusted'>
-			<div className='trusted__title'>
-				Trusted by over 100,000 Customers
-			</div>
+			<div className='trusted__title'>{t('trusted__title')}</div>
 			<Swiper
 				spaceBetween={50}
 				slidesPerView={2}

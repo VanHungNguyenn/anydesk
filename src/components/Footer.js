@@ -1,8 +1,10 @@
 import React from 'react'
 import footerLogo from '../images/footerLogo.svg'
-// import DropdownLanguage from './utils/DropdownLanguage/DropdownLanguage'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+	const { t } = useTranslation()
+
 	return (
 		<div className='footer'>
 			<div className='footer__container container'>
@@ -10,42 +12,36 @@ const Footer = () => {
 					<div className='footer__logo'>
 						<img src={footerLogo} alt='Logo' />
 					</div>
-					{/* <div className='footer__language'>
-						<DropdownLanguage />
-					</div> */}
 				</div>
 				<div className='footer__right'>
 					<div className='footer__menu-item'>
-						{/* <div className='footer__menu-item__title'>
-							Why MutilViewer
-						</div> */}
 						<div className='footer__menu-item__list'>
 							<a href='#home' className='footer__menu-item__link'>
-								Home
+								{t('header__nav-links.home')}
 							</a>
 							<a
 								href='#solutions'
 								className='footer__menu-item__link'
 							>
-								Solutions
+								{t('header__nav-links.solutions')}
 							</a>
 							<a
-								href='#tutorial'
+								href='#reviews'
 								className='footer__menu-item__link'
 							>
-								Tutorial
+								{t('header__nav-links.reviews')}
 							</a>
 							<a
 								href='#pricing'
 								className='footer__menu-item__link'
 							>
-								Pricing
+								{t('header__nav-links.pricing')}
 							</a>
 							<a
 								href='#contact'
 								className='footer__menu-item__link'
 							>
-								Contact
+								{t('header__nav-links.contact')}
 							</a>
 						</div>
 					</div>
