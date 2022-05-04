@@ -5,6 +5,11 @@ const languages = [
 		country_code: 'gb',
 	},
 	{
+		code: 'vi',
+		name: 'Vietnam',
+		country_code: 'vn',
+	},
+	{
 		code: 'ru',
 		name: 'Русский',
 		country_code: 'ru',
@@ -33,11 +38,6 @@ const languages = [
 		code: 'pt',
 		name: 'Português',
 		country_code: 'pt',
-	},
-	{
-		code: 'vi',
-		name: 'Vietnam',
-		country_code: 'vn',
 	},
 	{
 		code: 'th',

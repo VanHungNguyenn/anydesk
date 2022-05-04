@@ -1,5 +1,5 @@
 import React from 'react'
-import { images } from '../constants'
+import { icon } from '../constants'
 import { useTranslation } from 'react-i18next'
 
 const Features = () => {
@@ -11,11 +11,7 @@ const Features = () => {
 				{/* map 4 items [1,2,3,4] */}
 				{[1, 2, 3, 4].map((item) => (
 					<div className='features__item' key={item}>
-						<img
-							className='features__item-image'
-							src={images[`feature${item}`]}
-							alt='img'
-						/>
+						{icon[`${item - 1}`]}
 
 						<div className='features__item-title'>
 							{t(`features__item-title.${[item]}`)}
