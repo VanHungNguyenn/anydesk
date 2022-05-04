@@ -13,13 +13,13 @@ i18n.use(Backend)
 		interpolation: {
 			escapeValue: false,
 		},
-		whitelist: ['en', 'vi'],
+		whitelist: ['vi', 'en'],
 		backend: {
 			loadPath: '/locales/{{lng}}/{{ns}}.json',
 		},
 		detection: {
-			order: ['cookie', 'path', 'htmlTag', 'localStorage', 'subdomain'],
-			caches: ['cookie', 'localStorage'],
+			order: ['cookie'],
+			caches: ['cookie'],
 			lookupFromPathIndex: 0,
 			checkWhitelist: true,
 		},

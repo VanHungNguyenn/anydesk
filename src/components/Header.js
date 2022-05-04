@@ -18,6 +18,10 @@ const Header = ({ currentLang }) => {
 	}
 
 	useEffect(() => {
+		document.title = t('title')
+	}, [currentLang, t])
+
+	useEffect(() => {
 		const changeWidth = () => {
 			setScreenWidth(window.innerWidth)
 		}
