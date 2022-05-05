@@ -37,7 +37,9 @@ const Header = ({ currentLang }) => {
 		<div className='header'>
 			<div className='container header__container'>
 				<div className='header__logo'>
-					<img src={Logo} alt='Logo' />
+					<HashLink to='/'>
+						<img src={Logo} alt='Logo' />
+					</HashLink>
 				</div>
 				{(toggleMenu || screenWidth > 1024) && (
 					<div className='header__menu slide-bottom'>
