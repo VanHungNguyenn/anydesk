@@ -7,8 +7,8 @@ const Banner = () => {
 	return (
 		<div className='banner container' id='home'>
 			<h1 className='banner__title'>
-				{t('banner__title.access')}.
-				<span>{t('banner__title.now')}.</span>
+				{t('banner__title.access')}{' '}
+				<span>{t('banner__title.now')}</span>
 			</h1>
 			<h4 className='banner__subtitle'>{t('banner__subtitle')}.</h4>
 			<div className='banner__button button button--primary button--large'>

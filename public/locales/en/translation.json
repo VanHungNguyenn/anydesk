@@ -9,12 +9,12 @@
 	},
 
 	"banner__title": {
-		"access": "Access",
-		"now": "Now"
+		"access": "Access.",
+		"now": "Now."
 	},
 	"banner__subtitle": "Access any device at any time. From anywhere. Always secure and fast.",
 	"banner__button": "Download Now",
-	"banner__text": "MutilViewer is free for personal use.",
+	"banner__text": "MultiViewer is free for personal use.",
 
 	"intro__subtitle": "Remote Desktop Software",
 	"intro__title": {
@@ -49,7 +49,7 @@
 			"3": "Frame rates of 60 fps."
 		},
 		"2": {
-			"1": "Download 3 MB.",
+			"1": "Download ~50 MB.",
 			"2": "Start App.",
 			"3": "Done."
 		},
@@ -67,12 +67,12 @@
 	"features__intro-title": {
 		"1": "Why 10+",
 		"2": "Million Users",
-		"3": "love MutilViewer"
+		"3": "love MultiViewer"
 	},
 	"features__intro-button": "Download Now",
 
 	"pricing__title": "The Right Solution for You",
-	"pricing__subtitle": "Free 14 day trial for professional use.",
+	"pricing__subtitle": "Free 30 day trial for professional use.",
 	"pricing__button": "Download Now",
 	"pricing__item-name": {
 		"1": "Essentials",
@@ -151,23 +151,19 @@
 		},
 		"3": {
 			"question": "What payment options do you offer?",
-			"answer": "We accept payments via Visa, Mastercard, American Express, JCB, and PayPal. Bank transfers are accepted in Germany, Austria and Switzerland."
+			"answer": "We accept payments via Bank, Visa, Mastercard and PayPal"
 		},
 		"4": {
-			"question": "What is a user?",
-			"answer": "If you want to start remote access, you need a valid license assigned to the respective account , e.g. via your own MutilViewer address or alias. By user, the initiator of a session is meant."
+			"question": "What is a ID",
+			"answer": "If you want to start remote access, you need a valid license assigned to the respective account , e.g. via your own MultiViewer address or alias."
 		},
 		"5": {
-			"question": "What are registered devices?",
-			"answer": "With each paid license, devices can be registered according to the size of the license. A user can, for example, log in and start sessions on up to 3 devices in parallel."
+			"question": "What platforms can the software be used on?",
+			"answer": "Currently, we only support Windows devices."
 		},
 		"6": {
-			"question": "What is a Namespace?",
-			"answer": "You can rename your MutilViewer address (e.g. 123 456 789) to an available alias in the @AD domain (example. My.Name@AD). The Namespace option allows you to specify an individual Namespace available only to you, e.g. My.Name@CompanyName."
-		},
-		"7": {
 			"question": "How can I get support?",
-			"answer": "You can get support via our Help Center or by emailing us at ..."
+			"answer": "You can get support through the platforms we have listed in Contact"
 		}
 	}
 }

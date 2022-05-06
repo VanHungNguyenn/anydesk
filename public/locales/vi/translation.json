@@ -14,7 +14,7 @@
 	},
 	"banner__subtitle": "Truy cập và điều khiển tất cả thiêt bị một cách nhanh chóng và dễ dàng",
 	"banner__button": "Tải về ngay",
-	"banner__text": "MutilViewer miễn phí cho tất cả người dùng",
+	"banner__text": "MultiViewer miễn phí cho tất cả người dùng",
 
 	"intro__subtitle": "Phần mềm điều khiển máy tính từ xa",
 	"intro__title": {
@@ -31,143 +31,139 @@
 		"3": "Triệu"
 	},
 	"statistic__item-title": {
-		"1": "Downloads",
-		"2": "Sessions per month",
-		"3": "Bridged miles per month"
+		"1": "Lượt tải về",
+		"2": "Lượt sử dụng mỗi tháng",
+		"3": "(km) khoảng cách di chuyển mỗi tháng"
 	},
 
 	"features__item-title": {
-		"1": "Blazing fast",
-		"2": "Lightweight",
-		"3": "Secure",
-		"4": "Everywhere"
+		"1": "Nhanh như chớp",
+		"2": "Nhẹ",
+		"3": "Bảo mật",
+		"4": "Mọi nơi"
 	},
 	"features__item-text": {
 		"1": {
-			"1": "Minimum latency via",
-			"2": "our own DeskRT codec.",
-			"3": "Frame rates of 60 fps."
+			"1": "Độ trễ tối thiểu qua",
+			"2": "codec DeskRT của riêng chúng tôi.",
+			"3": "Tốc độ khung hình 60 khung hình / giây"
 		},
 		"2": {
-			"1": "Download 3 MB.",
-			"2": "Start App.",
-			"3": "Done."
+			"1": "Tải xuống ~ 50 MB.",
+			"2": "Khởi động ứng dụng.",
+			"3": "Xong."
 		},
 		"3": {
-			"1": "Military-grade TLS 1.2 security,",
+			"1": "Bảo mật TLS 1.2 cấp quân sự",
 			"2": "256-bit AES",
-			"3": "Transport Encryption"
+			"3": "Mã hóa truyền tải"
 		},
 		"4": {
-			"1": "Works on Windows,",
-			"2": "anywhere and",
-			"3": "anytime"
+			"1": "Hoạt động trên Windows,",
+			"2": "mọi nơi và",
+			"3": "bất cứ lúc nào"
 		}
 	},
 	"features__intro-title": {
-		"1": "Why 10+",
-		"2": "Million Users",
-		"3": "love MutilViewer"
+		"1": "Tại sao 10+",
+		"2": "Triệu người dùng",
+		"3": "yêu thích MultiViewer"
 	},
-	"features__intro-button": "Download Now",
+	"features__intro-button": "Tải xuống ngay",
 
-	"pricing__title": "The Right Solution for You",
-	"pricing__subtitle": "Free 14 day trial for professional use.",
-	"pricing__button": "Download Now",
+	"pricing__title": "Giải pháp phù hợp cho bạn",
+	"pricing__subtitle": "Dùng thử miễn phí 30 ngày để sử dụng chuyên nghiệp.",
+	"pricing__button": "Tải xuống ngay",
 	"pricing__item-name": {
-		"1": "Essentials",
-		"2": "Performance",
-		"3": "Enterprise"
+		"1": "Cơ bản",
+		"2": "Hiệu suất",
+		"3": "Doanh nghiệp"
 	},
 	"pricing__item-price": {
 		"1": "$0",
-		"2": "$19.99",
-		"3": "$29.99"
+		"2": "$19,99",
+		"3": "$29,99"
 	},
 	"pricing__item-subprice": {
-		"1": "per month (billed annually)",
-		"2": "per month and user (billed annually)",
-		"3": "per month and user (billed annually)"
+		"1": "mỗi tháng (thanh toán hàng năm)",
+		"2": "mỗi tháng và người dùng (thanh toán hàng năm)",
+		"3": "mỗi tháng và người dùng (thanh toán hàng năm)"
 	},
-	"pricing__item-text": {
+	"price__item-text": {
 		"1": {
-			"1": "Basic features for",
-			"2": "remote working."
+			"1": "Các tính năng cơ bản cho",
+			"2": "làm việc từ xa."
 		},
 		"2": {
-			"1": "Fast and reliable.",
-			"2": "Full set of business features."
+			"1": "Nhanh chóng và đáng tin cậy.",
+			"2": "Tập hợp đầy đủ các tính năng kinh doanh."
 		},
 		"3": {
-			"1": "Fully customizable. Mass Deployment.",
-			"2": "In the Cloud or On-Premises."
+			"1": "Hoàn toàn có thể tùy chỉnh. Triển khai hàng loạt.",
+			"2": "Trong đám mây hoặc tại chỗ."
 		}
 	},
-	"pricing__item-button": "Download Now",
+	"pricing__item-button": "Tải xuống ngay",
 	"pricing__item-includes": {
-		"1": "Single-user license, includes",
-		"2": "Multi-user license, includes",
-		"3": "Multi-user license, includes"
+		"1": "Giấy phép cho một người dùng, bao gồm",
+		"2": "Giấy phép nhiều người dùng, bao gồm",
+		"3": "Giấy phép nhiều người dùng, bao gồm"
 	},
 	"pricing__item-features": {
 		"1": {
-			"1": "Unlimited devices to connect to (attended)",
-			"2": "1 managed device (unattended)",
-			"3": "1 licensed user = 1 device to connect from",
-			"4": "Access to Help Center"
+			"1": "Không giới hạn thiết bị để kết nối",
+			"2": "1 thiết bị được quản lý",
+			"3": "1 người dùng được cấp phép = 1 thiết bị để kết nối",
+			"4": "Hỗ trợ khách hàng"
 		},
 		"2": {
-			"1": "Unlimited devices to connect to (attended)",
-			"2": "Up to 3000 managed devices (unattended)",
-			"3": "Connect from up to 3 devices per licensed user",
+			"1": "Không giới hạn thiết bị để kết nối (đã tham dự)",
+			"2": "Lên đến 3000 thiết bị được quản lý",
+			"3": "Kết nối từ tối đa 3 thiết bị cho mỗi người dùng được cấp phép",
 			"4": "Wake-on-Lan",
-			"5": "Session Recording",
-			"6": "Advanced security options",
-			"7": "Customer Support"
+			"5": "Ghi phiên",
+			"6": "Tùy chọn bảo mật nâng cao",
+			"7": "Hỗ trợ khách hàng"
 		},
 		"3": {
-			"1": "Unlimited devices to connect to (attended)",
-			"2": "Unlimited managed devices (unattended)",
-			"3": "Connect from up to 3 devices per licensed user",
-			"4": "Unlimited concurrent sessions",
-			"5": "Customization and branding",
-			"6": "Command line interface",
-			"7": "MSI deployment",
-			"8": "Group Policies"
+			"1": "Không giới hạn thiết bị để kết nối",
+			"2": "Thiết bị được quản lý không giới hạn",
+			"3": "Kết nối từ tối đa 3 thiết bị cho mỗi người dùng được cấp phép",
+			"4": "Không giới hạn phiên đồng thời",
+			"5": "Tùy chỉnh và xây dựng thương hiệu",
+			"6": "Giao diện dòng lệnh",
+			"7": "Triển khai MSI",
+			"8": "Chính sách Nhóm"
 		}
 	},
 
-	"community__title": "Join our Community",
+	"community__title": "Tham gia Cộng đồng của chúng tôi",
 
-	"question__title": "All you need to know",
+	"question__title": "Tất cả những gì bạn cần biết",
 	"question__data": {
 		"1": {
-			"question": "Do you offer a monthly subscription and monthly payment?",
-			"answer": "Currently, we offer subscriptions on an annual basis and annual billings."
+			"question": "Bạn có cung cấp đăng ký hàng tháng và thanh toán hàng tháng không?",
+			"answer": "Hiện tại, chúng tôi cung cấp đăng ký hàng năm và lập hóa đơn hàng năm."
 		},
 		"2": {
-			"question": "Do I need to renew my contract every year?",
-			"answer": "We understand that Business Continuity is important for you. Hence, your contract will renew automatically unless you let us know beforehand."
+			"question": "Tôi có cần gia hạn hợp đồng hàng năm không?",
+			"answer": "Chúng tôi hiểu rằng Tính liên tục trong kinh doanh là quan trọng đối với bạn. Do đó, hợp đồng của bạn sẽ tự động gia hạn trừ khi bạn cho chúng tôi biết trước."
 		},
 		"3": {
-			"question": "What payment options do you offer?",
-			"answer": "We accept payments via Visa, Mastercard, American Express, JCB, and PayPal. Bank transfers are accepted in Germany, Austria and Switzerland."
+			"question": "Bạn cung cấp các tùy chọn thanh toán nào?",
+			"answer": "Chúng tôi chấp nhận thanh toán qua Ngân hàng, Visa, Mastercard và PayPal"
 		},
 		"4": {
-			"question": "What is a user?",
-			"answer": "If you want to start remote access, you need a valid license assigned to the respective account , e.g. via your own MutilViewer address or alias. By user, the initiator of a session is meant."
+			"question": "ID là gì?",
+			"answer": "Nếu bạn muốn bắt đầu truy cập từ xa, bạn cần có giấy phép hợp lệ được chỉ định cho tài khoản tương ứng, ví dụ: qua địa chỉ hoặc bí danh MultiViewer của riêng bạn."
 		},
 		"5": {
-			"question": "What are registered devices?",
-			"answer": "With each paid license, devices can be registered according to the size of the license. A user can, for example, log in and start sessions on up to 3 devices in parallel."
+			"question": "Phần mềm có thể được sử dụng trên những nền tảng nào?",
+			"answer": "Hiện tại, chúng tôi chỉ hỗ trợ các thiết bị Windows."
 		},
 		"6": {
-			"question": "What is a Namespace?",
-			"answer": "You can rename your MutilViewer address (e.g. 123 456 789) to an available alias in the @AD domain (example. My.Name@AD). The Namespace option allows you to specify an individual Namespace available only to you, e.g. My.Name@CompanyName."
-		},
-		"7": {
-			"question": "How can I get support?",
-			"answer": "You can get support via our Help Center or by emailing us at ..."
+			"question": "Làm cách nào để nhận hỗ trợ?",
+			"answer": "Bạn có thể nhận hỗ trợ thông qua các nền tảng mà chúng tôi đã liệt kê trong Liên hệ"
 		}
 	}
 }

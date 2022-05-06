@@ -27,7 +27,15 @@ const Pricing = () => {
 							{t(`pricing__item-text.${item}.1`)} <br />
 							{t(`pricing__item-text.${item}.2`)}
 						</p>
-						<div className='pricing__item-button button button--large button--default button--100'>
+						<div
+							className={`pricing__item-button button button--large ${
+								item === 2
+									? 'button--primary'
+									: 'button--default'
+							}
+						
+						} button--100`}
+						>
 							{t('pricing__item-button')}
 						</div>
 						<div className='pricing__item-includes'>

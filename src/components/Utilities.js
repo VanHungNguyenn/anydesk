@@ -6,7 +6,7 @@ import { images } from '../constants'
 const Utilities = () => {
 	return (
 		<div className='utilities container'>
-			<div className='utilities__title'>MutilViewer fits your Needs</div>
+			<div className='utilities__title'>MultiViewer fits your Needs</div>
 			<div className='utilities__list'>
 				<div className='utilities__item'>
 					<img
@@ -35,7 +35,7 @@ const Utilities = () => {
 						Flexibility & Customization
 					</div>
 					<div className='utilities__item-text'>
-						Create your own version of MutilViewer and fit it to
+						Create your own version of MultiViewer and fit it to
 						your individual needs. Allow a consistent brand
 						experience for your users.
 					</div>

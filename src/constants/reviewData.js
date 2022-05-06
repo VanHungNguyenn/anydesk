@@ -4,7 +4,7 @@ const reviewData = [
 		author: 'Roberto S., Full Stack Developer',
 	},
 	{
-		quote: '“MutilViewer is an essential tool for us because it provides high transmission quality due to its real-time codec.”',
+		quote: '“MultiViewer is an essential tool for us because it provides high transmission quality due to its real-time codec.”',
 		author: 'Tim Herrmann, Operational Management of the Data Integration Center, Magdeburg Data Integration Center',
 	},
 	{

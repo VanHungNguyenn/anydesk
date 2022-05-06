@@ -1,5 +1,5 @@
 import React from 'react'
-import footerLogo from '../images/footerLogo.svg'
+import { images } from '../constants'
 import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
 			<div className='footer__container container'>
 				<div className='footer__left'>
 					<div className='footer__logo'>
-						<img src={footerLogo} alt='Logo' />
+						<img src={images.footerLogo} alt='Logo' />
 					</div>
 				</div>
 				<div className='footer__right'>
@@ -74,7 +74,7 @@ const Footer = () => {
 						<div className='footer__menu-item__title'>Service</div>
 						<div className='footer__menu-item__list'>
 							<div className='footer__menu-item__link'>
-								MutilViewer Services
+								MultiViewer Services
 							</div>
 							<div className='footer__menu-item__link'>
 								Customer Success
@@ -109,7 +109,7 @@ const Footer = () => {
 			</div>
 			<div className='container sign'>
 				<div className='sign__copyrights'>
-					© 2022 MutilViewer Software GmbH
+					© 2022 MultiViewer Software GmbH
 				</div>
 				<div className='sign__social'>
 					<div className='sign__social-link'>

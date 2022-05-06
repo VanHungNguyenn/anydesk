@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Logo from '../images/logo.svg'
+import { images } from '../constants'
 import DropdownLanguage from './utils/DropdownLanguage/DropdownLanguage'
 import { HashLink } from 'react-router-hash-link'
 import { useTranslation } from 'react-i18next'
@@ -38,7 +38,7 @@ const Header = ({ currentLang }) => {
 			<div className='container header__container'>
 				<div className='header__logo'>
 					<HashLink to='/'>
-						<img src={Logo} alt='Logo' />
+						<img src={images.logo} alt='Logo' />
 					</HashLink>
 				</div>
 				{(toggleMenu || screenWidth > 1024) && (
