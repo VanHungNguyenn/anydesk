@@ -8,9 +8,15 @@ const Pricing = () => {
 		<div className='pricing container' id='pricing'>
 			<div className='pricing__title'>{t('pricing__title')}</div>
 			<div className='pricing__subtitle'>{t('pricing__subtitle')}</div>
-			<div className='pricing__button button button--large button--primary text-center'>
-				{t('pricing__button')}
-			</div>
+			<a
+				href='https://cloud.mutilviewer.com/install_mutilviewer.exe'
+				target='_blank'
+				rel='noreferrer'
+			>
+				<div className='pricing__button button button--large button--primary text-center'>
+					{t('pricing__button')}
+				</div>
+			</a>
 			<div className='pricing__list'>
 				{[1, 2, 3].map((item) => (
 					<div className='pricing__item' key={item}>

@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link'
 import { useTranslation } from 'react-i18next'
 
 const Header = ({ currentLang }) => {
-	const { t } = useTranslation()
+	const { t, i18n } = useTranslation()
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
@@ -19,7 +19,8 @@ const Header = ({ currentLang }) => {
 
 	useEffect(() => {
 		document.title = t('title')
-	}, [currentLang, t])
+		// set lang
+	}, [currentLang, i18n, t])
 
 	useEffect(() => {
 		const changeWidth = () => {
@@ -39,6 +40,7 @@ const Header = ({ currentLang }) => {
 				<div className='header__logo'>
 					<HashLink to='/'>
 						<img src={images.logo} alt='Logo' />
+						MultiViewer
 					</HashLink>
 				</div>
 				{(toggleMenu || screenWidth > 1024) && (

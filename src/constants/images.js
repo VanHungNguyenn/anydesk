@@ -23,8 +23,8 @@ import youtube from '../images/community/youtube.svg'
 import reddit from '../images/community/reddit.svg'
 import linkedln from '../images/community/linkedln.svg'
 
-import logo from '../images/logo.png'
-import footerLogo from '../images/footerLogo.png'
+import logo from '../images/logo.svg'
+import footerLogo from '../images/footerLogo.svg'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {

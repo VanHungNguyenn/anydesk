@@ -11,9 +11,16 @@ const Banner = () => {
 				<span>{t('banner__title.now')}</span>
 			</h1>
 			<h4 className='banner__subtitle'>{t('banner__subtitle')}.</h4>
-			<div className='banner__button button button--primary button--large'>
-				{t('banner__button')}
-			</div>
+
+			<a
+				href='https://cloud.mutilviewer.com/install_mutilviewer.exe'
+				target='_blank'
+				rel='noreferrer'
+			>
+				<div className='banner__button button button--primary button--large'>
+					{t('banner__button')}
+				</div>
+			</a>
 			<div className='fs-5 mb-4'>Windows (3.8MB)</div>
 			<div className='fs-5 mb-5'>{t('banner__text')}</div>
 		</div>

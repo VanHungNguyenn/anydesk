@@ -30,9 +30,15 @@ const Features = () => {
 					{t('features__intro-title.2')} <br />
 					{t('features__intro-title.3')}
 				</div>
-				<div className='features__intro-button button button--primary button--large'>
-					{t('features__intro-button')}
-				</div>
+				<a
+					href='https://cloud.mutilviewer.com/install_mutilviewer.exe'
+					target='_blank'
+					rel='noreferrer'
+				>
+					<div className='features__intro-button button button--primary button--large'>
+						{t('features__intro-button')}
+					</div>
+				</a>
 			</div>
 		</div>
 	)

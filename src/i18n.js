@@ -5,7 +5,6 @@ import Backend from 'i18next-http-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
 i18n.use(Backend)
-
 	.use(LanguageDetector)
 	.use(initReactI18next)
 	.init({
@@ -19,8 +18,7 @@ i18n.use(Backend)
 			loadPath: '/locales/{{lng}}/{{ns}}.json',
 		},
 		detection: {
-			order: ['location', 'cookie'],
-			caches: ['cookie'],
+			order: ['path'],
 			lookupFromPathIndex: 0,
 			checkWhitelist: true,
 		},
