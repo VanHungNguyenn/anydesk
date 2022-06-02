@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import linkDownload from '../constants/link'
 
 const Pricing = () => {
 	const { t } = useTranslation()
@@ -8,11 +9,7 @@ const Pricing = () => {
 		<div className='pricing container' id='pricing'>
 			<div className='pricing__title'>{t('pricing__title')}</div>
 			<div className='pricing__subtitle'>{t('pricing__subtitle')}</div>
-			<a
-				href='https://cloud.mutilviewer.com/install_mutilviewer.exe'
-				target='_blank'
-				rel='noreferrer'
-			>
+			<a href={linkDownload} target='_blank' rel='noreferrer'>
 				<div className='pricing__button button button--large button--primary text-center'>
 					{t('pricing__button')}
 				</div>
@@ -33,17 +30,19 @@ const Pricing = () => {
 							{t(`pricing__item-text.${item}.1`)} <br />
 							{t(`pricing__item-text.${item}.2`)}
 						</p>
-						<div
-							className={`pricing__item-button button button--large ${
-								item === 2
-									? 'button--primary'
-									: 'button--default'
-							}
+						<a href={linkDownload} target='_blank' rel='noreferrer'>
+							<div
+								className={`pricing__item-button button button--large ${
+									item === 2
+										? 'button--primary'
+										: 'button--default'
+								}
 						
 						} button--100`}
-						>
-							{t('pricing__item-button')}
-						</div>
+							>
+								{t('pricing__item-button')}
+							</div>
+						</a>
 						<div className='pricing__item-includes'>
 							{t(`pricing__item-includes.${item}`)}
 						</div>

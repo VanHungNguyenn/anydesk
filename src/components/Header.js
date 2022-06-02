@@ -4,7 +4,7 @@ import DropdownLanguage from './utils/DropdownLanguage/DropdownLanguage'
 import { HashLink } from 'react-router-hash-link'
 import { useTranslation } from 'react-i18next'
 
-const Header = ({ currentLang }) => {
+const Header = () => {
 	const { t, i18n } = useTranslation()
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
@@ -19,8 +19,7 @@ const Header = ({ currentLang }) => {
 
 	useEffect(() => {
 		document.title = t('title')
-		// set lang
-	}, [currentLang, i18n, t])
+	}, [i18n, t])
 
 	useEffect(() => {
 		const changeWidth = () => {
@@ -89,7 +88,7 @@ const Header = ({ currentLang }) => {
 							</HashLink>
 						</div>
 						<div className='header__language'>
-							<DropdownLanguage currentLang={currentLang} />
+							<DropdownLanguage />
 						</div>
 					</div>
 				)}

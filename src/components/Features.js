@@ -1,6 +1,7 @@
 import React from 'react'
 import { icon } from '../constants'
 import { useTranslation } from 'react-i18next'
+import linkDownload from '../constants/link'
 
 const Features = () => {
 	const { t } = useTranslation()
@@ -30,11 +31,7 @@ const Features = () => {
 					{t('features__intro-title.2')} <br />
 					{t('features__intro-title.3')}
 				</div>
-				<a
-					href='https://cloud.mutilviewer.com/install_mutilviewer.exe'
-					target='_blank'
-					rel='noreferrer'
-				>
+				<a href={linkDownload} target='_blank' rel='noreferrer'>
 					<div className='features__intro-button button button--primary button--large'>
 						{t('features__intro-button')}
 					</div>

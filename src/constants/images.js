@@ -26,6 +26,9 @@ import linkedln from '../images/community/linkedln.svg'
 import logo from '../images/logo.svg'
 import footerLogo from '../images/footerLogo.svg'
 
+import image404 from '../images/404.png'
+import spinner from '../images/spinner.svg'
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	amazon,
@@ -51,4 +54,6 @@ export default {
 	linkedln,
 	logo,
 	footerLogo,
+	image404,
+	spinner,
 }

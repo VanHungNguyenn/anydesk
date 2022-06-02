@@ -2,10 +2,12 @@ import React, { useState, useRef } from 'react'
 import { languages } from '../../../constants'
 import useOnClickOutside from '../../../hooks/useOnClickOutside'
 import './dropdownLanguage.css'
-import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import cookies from 'js-cookie'
 
-const DropdownLanguage = ({ currentLang }) => {
+const DropdownLanguage = () => {
+	const currentLang = cookies.get('i18next') || 'en'
+
 	const [isOpen, setIsOpen] = useState(false)
 
 	const ref = useRef()
@@ -54,22 +56,21 @@ const DropdownLanguage = ({ currentLang }) => {
 				{isOpen && (
 					<div className='dropdown-language__dropdown'>
 						{languages.map((lang, index) => (
-							<Link to={`/${lang.code}`} key={index}>
+							<div
+								key={index}
+								className='dropdown-language-dropdown__item'
+								value={lang.code}
+								onClick={() => handleChange(lang.code)}
+							>
+								{/* flags */}
 								<div
-									className='dropdown-language-dropdown__item'
-									value={lang.code}
-									onClick={() => handleChange(lang.code)}
-								>
-									{/* flags */}
-									<div
-										className={`dropdown-language-dropdown__flag fi fi-${lang.country_code}`}
-									></div>
-									{/* language */}
-									<div className='dropdown-language-dropdown__name'>
-										{lang.name}
-									</div>
+									className={`dropdown-language-dropdown__flag fi fi-${lang.country_code}`}
+								></div>
+								{/* language */}
+								<div className='dropdown-language-dropdown__name'>
+									{lang.name}
 								</div>
-							</Link>
+							</div>
 						))}
 					</div>
 				)}

@@ -108,3 +108,5 @@ body {
 @import url('./css/tutorial.css');
 /* Review css */
 @import url('./css/review.css');
+/* 404 css */
+@import url('./css/404.css');

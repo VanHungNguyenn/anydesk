@@ -11,10 +11,10 @@ import Pricing from '../components/Pricing'
 import Question from '../components/Question'
 import Review from '../components/Review'
 
-const Home = ({ currentLang }) => {
+const Home = () => {
 	return (
 		<>
-			<Header currentLang={currentLang} />
+			<Header />
 			<Banner />
 			<Intro />
 			<Trusted />

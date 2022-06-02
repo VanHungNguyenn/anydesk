@@ -1,67 +1,40 @@
-import { useState, useEffect, useCallback } from 'react'
-import {
-	Routes,
-	Route,
-	Navigate,
-	useLocation,
-	useNavigate,
-} from 'react-router-dom'
-import Home from './pages/Home'
+import { useEffect, useCallback } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import { languages } from './constants'
 import axios from 'axios'
 import { useTranslation } from 'react-i18next'
 
+import Home from './pages/Home'
+import PageNotFound from './pages/PageNotFound'
+
 function App() {
 	const { i18n } = useTranslation()
-	const navigate = useNavigate()
 
-	const id = useLocation().pathname.split('/')[1]
-
-	console.log(id)
-
-	const [currentLang, setCurrentLang] = useState('en')
-
-	//console.log({ currentLang })
-
-	const handleChange = useCallback(async () => {
+	const detectFirstVisitedIP = useCallback(async () => {
 		// check current language === IP language, if not change language detector
-		const res = await axios.get('https://geolocation-db.com/json/')
+		const res = await axios.get('https://lumtest.com/myip.json')
 
-		if (res.data.country_code.toLowerCase()) {
+		if (res.data.country.toLowerCase()) {
 			const newLang =
 				languages.find(
 					(lang) =>
 						lang.country_code ===
-						res.data.country_code.toLowerCase()
+						res.data.country.toLowerCase()
 				)?.code || 'en'
 
-			setCurrentLang(newLang)
-
 			i18n.changeLanguage(newLang)
-			navigate(`/${newLang}`)
 		}
-	}, [i18n, navigate])
+	}, [i18n])
 
+	// call api, detect language by IP, set first language to currentLang
 	useEffect(() => {
-		if (currentLang === 'en') {
-			handleChange()
-		}
-		// reload
-	}, [handleChange, currentLang])
+		detectFirstVisitedIP()
+	}, [detectFirstVisitedIP])
 
 	return (
 		<Routes>
-			<>
-				{languages.map((lang, index) => (
-					<Route
-						path={`/${lang.code}`}
-						element={<Home currentLang={lang.code} />}
-						key={index}
-					/>
-				))}
-				<Route path='/' element={<Navigate to={`/${currentLang}`} />} />
-				{/* Page not found */}
-			</>
+			<Route path='/' element={<Home />} />
+			<Route path='*' element={<PageNotFound />} />
 		</Routes>
 	)
 }
