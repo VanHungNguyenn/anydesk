@@ -1,6 +1,13 @@
 import React from 'react'
 import { images } from '../constants'
 import { useTranslation } from 'react-i18next'
+import MessengerCustomerChat from 'react-messenger-customer-chat'
+import {
+	facebookLink,
+	twitterLink,
+	telegramLink,
+	youtubeLink,
+} from '../constants/link'
 
 const Footer = () => {
 	const { t } = useTranslation()
@@ -45,66 +52,6 @@ const Footer = () => {
 							</a>
 						</div>
 					</div>
-					{/* <div className='footer__menu-item'>
-						<div className='footer__menu-item__title'>
-							Solutions
-						</div>
-						<div className='footer__menu-item__list'>
-							<div className='footer__menu-item__link'>
-								Remote Desktop
-							</div>
-							<div className='footer__menu-item__link'>
-								Remote Support
-							</div>
-							<div className='footer__menu-item__link'>
-								Remote Work
-							</div>
-							<div className='footer__menu-item__link'>
-								Remote Access
-							</div>
-							<div className='footer__menu-item__link'>
-								Pricing
-							</div>
-							<div className='footer__menu-item__link'>
-								Downloads
-							</div>
-						</div>
-					</div>
-					<div className='footer__menu-item'>
-						<div className='footer__menu-item__title'>Service</div>
-						<div className='footer__menu-item__list'>
-							<div className='footer__menu-item__link'>
-								MultiViewer Services
-							</div>
-							<div className='footer__menu-item__link'>
-								Customer Success
-							</div>
-							<div className='footer__menu-item__link'>
-								Help Center
-							</div>
-							<div className='footer__menu-item__link'>
-								Abuse Precention
-							</div>
-						</div>
-					</div>
-					<div className='footer__menu-item'>
-						<div className='footer__menu-item__title'>Company</div>
-						<div className='footer__menu-item__list'>
-							<div className='footer__menu-item__link'>
-								About Us
-							</div>
-							<div className='footer__menu-item__link'>
-								Contact
-							</div>
-							<div className='footer__menu-item__link'>
-								Career
-							</div>
-							<div className='footer__menu-item__link'>
-								Partners
-							</div>
-							<div className='footer__menu-item__link'>Blog</div>
-						</div>
-					</div> */}
 				</div>
 			</div>
 			<div className='container sign'>
@@ -112,20 +59,44 @@ const Footer = () => {
 					© 2022 MultiViewer Software GmbH
 				</div>
 				<div className='sign__social'>
-					<div className='sign__social-link'>
+					<a
+						href={facebookLink}
+						target='_blank'
+						rel='noopener noreferrer'
+						className='sign__social-link'
+					>
 						<i className='fa-brands fa-facebook-f'></i>
-					</div>
-					<div className='sign__social-link'>
+					</a>
+					<a
+						href={twitterLink}
+						target='_blank'
+						rel='noopener noreferrer'
+						className='sign__social-link'
+					>
 						<i className='fa-brands fa-twitter'></i>
-					</div>
-					<div className='sign__social-link'>
+					</a>
+					<a
+						href={telegramLink}
+						target='_blank'
+						rel='noopener noreferrer'
+						className='sign__social-link'
+					>
 						<i className='fa-brands fa-telegram'></i>
-					</div>
-					<div className='sign__social-link'>
+					</a>
+					<a
+						href={youtubeLink}
+						target='_blank'
+						rel='noopener noreferrer'
+						className='sign__social-link'
+					>
 						<i className='fa-brands fa-youtube'></i>
-					</div>
+					</a>
 				</div>
 			</div>
+			<MessengerCustomerChat
+				pageId='109906745066549'
+				appId='1153399772117086'
+			/>
 		</div>
 	)
 }

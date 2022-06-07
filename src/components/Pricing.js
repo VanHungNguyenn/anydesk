@@ -8,7 +8,7 @@ const Pricing = () => {
 	return (
 		<div className='pricing container' id='pricing'>
 			<div className='pricing__title'>{t('pricing__title')}</div>
-			<div className='pricing__subtitle'>{t('pricing__subtitle')}</div>
+			<h5 className='pricing__subtitle'>{t('pricing__subtitle')}</h5>
 			<a href={linkDownload} target='_blank' rel='noreferrer'>
 				<div className='pricing__button button button--large button--primary text-center'>
 					{t('pricing__button')}

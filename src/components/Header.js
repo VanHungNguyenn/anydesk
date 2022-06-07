@@ -39,7 +39,7 @@ const Header = () => {
 				<div className='header__logo'>
 					<HashLink to='/'>
 						<img src={images.logo} alt='Logo' />
-						MultiViewer
+						<h1>MultiViewer</h1>
 					</HashLink>
 				</div>
 				{(toggleMenu || screenWidth > 1024) && (

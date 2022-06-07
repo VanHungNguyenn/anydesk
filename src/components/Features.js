@@ -26,11 +26,11 @@ const Features = () => {
 				))}
 			</div>
 			<div className='features__intro'>
-				<div className='features__intro-title'>
+				<h3 className='features__intro-title'>
 					{t('features__intro-title.1')} <br />
 					{t('features__intro-title.2')} <br />
 					{t('features__intro-title.3')}
-				</div>
+				</h3>
 				<a href={linkDownload} target='_blank' rel='noreferrer'>
 					<div className='features__intro-button button button--primary button--large'>
 						{t('features__intro-button')}
