@@ -10,6 +10,8 @@ import PageNotFound from './pages/PageNotFound'
 function App() {
 	const { i18n } = useTranslation()
 
+	console.log('Hehe', i18n)
+
 	const detectFirstVisitedIP = useCallback(async () => {
 		// check current language === IP language, if not change language detector
 		const res = await axios.get('https://lumtest.com/myip.json')
@@ -18,9 +20,8 @@ function App() {
 			const newLang =
 				languages.find(
 					(lang) =>
-						lang.country_code ===
-						res.data.country.toLowerCase()
-				)?.code || 'en'
+						lang.country_code === res.data.country.toLowerCase()
+				)?.code || 'vi'
 
 			i18n.changeLanguage(newLang)
 		}
